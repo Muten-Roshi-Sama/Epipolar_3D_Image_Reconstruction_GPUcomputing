@@ -6,4 +6,5 @@ IPython
 scipy
 opencv-python
 
+ipykernel
 jupyter
