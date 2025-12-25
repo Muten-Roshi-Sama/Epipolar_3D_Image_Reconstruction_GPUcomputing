@@ -1,11 +1,32 @@
-# Stereovision 
-# 3D image reconstruction from a set of two 2D images.
+# Stereovision :
+# 3D image reconstruction from a set of two 2D images
 
 _Summary:  Each of your eyes work together to give you a 3D perception of life. Your brain combines two 2D images into a 3D image space. This process is being done here using fancy math and matrixes to recreate a full 3D image._
 
-![Suzanne](main.png)
+![Suzanne](img/main.png)
 
 Stereovision is a discipline that deals with the reconstruction of 3D information from images. For the reconstruction of a point, several images of this point are needed. These images must be taken from different points of view. The key step of the reconstruction, which is often problematic, is to identify the images of the point to be reconstructed in each view.
+
+
+
+## Scans
+
+<img src="img/laser_epilines_fused.gif">
+
+
+<img src="img/chessboard_epilines.png">
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Epipolar Geometry
 
@@ -13,7 +34,7 @@ Epipolar geometry involves two cameras. The epipolar geometry describes the geom
 
 ## The Fondamental Matrix
 
-![Epipolar Geometry - Sanyam Kapoor](epipolar.png)
+![Epipolar Geometry - Sanyam Kapoor](img/epipolar.png)
 
 Let us imagine that we have two images, right and left, of the world space. Let's take a point $\vec{x}$ in the right image space. The point $\vec{X}$ of the world space, of which $\vec{x}$ is the image, can be anywhere on the line passing through $\vec{x}$ and the optical center of the right camera. We will call this line the back-projected ray of $\vec{x}$. Let us note $\vec{x}'$ the image of $\vec{X}$ in the left image space. The locus of $\vec{x}'$ is therefore the image line of the back-projected ray of $\vec{x}$. This line is called the epipolar line and is denoted $\vec{l}'$. The epipolar line passes through the epipole $\vec{e}'$, image of the optical center of the right camera.
 
